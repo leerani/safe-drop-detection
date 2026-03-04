@@ -28,6 +28,11 @@ Webcam → YOLO → bbox center y(t) → dy/vy/ay 낙하 패턴 → fall_count �
   payload: `{"hazard_type":"Safe" | "Drop"}`
 
 
+### Output example
+- Safe: {"hazard_type":"Safe"}
+- Drop: {"hazard_type":"Drop"} (locked=true)
+
+
 ## Parameters (tunable)
 - WARMUP_FRAMES = 8
 - falling_pattern: dy>50, vy>300, ay>300
